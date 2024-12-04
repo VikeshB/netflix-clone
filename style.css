@@ -1,0 +1,107 @@
+body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #141414;
+            color: #fff;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #141414;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+        header img {
+            height: 50px;
+            width: 50px;
+        }
+        header nav{
+          margin-right: 20px;
+        }
+        header nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        header nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            position: relative;
+            height: 80vh;
+            width: 100%;
+            background-image: url(hero.webp);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .hero-content {
+            position: absolute;
+            bottom: 20%;
+            left: 5%;
+        }
+        .hero-content h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        .hero-content p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+        .hero-content button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: #e50914;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+        }
+        .hero-content button:hover {
+            background-color: #f40612;
+        }
+        .content {
+            padding: 20px;
+        }
+        .content h2 {
+            margin: 20px 0;
+        }
+        .row {
+            display: flex;
+            overflow-x: scroll;
+        }
+        .row img {
+            width: 200px;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #141414;
+            padding: 20px;
+            text-align: center;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+            .hero-content p {
+                font-size: 1rem;
+            }
+            .hero-content button {
+                font-size: 0.9rem;
+            }
+            .row img {
+                width: 150px;
+            }
+        }
